@@ -1,0 +1,193 @@
+*{
+    margin: 00;
+    box-sizing: border-box;
+}
+body{
+    font-family: myfont;
+    background-color: #111;
+}
+.row_posters{
+    width:100%;
+    object-fit: contain;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+}
+.row{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+.row_posters:hover{
+    transform: scale(1.03) ;
+}
+.row_posters::-webkit-scrollbar{
+    display:none;
+}
+.row::-webkit-scrollbar{
+    display: none ;
+}
+.row::-webkit-scrollbar-button{
+    display: flex;
+}
+.row_posterslarge{
+    max-height: 365px;
+}
+.row_posterslarge:hover{
+    transform: scale(1.05);
+}
+.rows{
+    color: white;
+    margin-left:20px;
+}
+.banner{
+    background-image:url(netflix-images/ze.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 530px;
+}
+.banner_contents{
+    margin-left: 45px;
+    padding-top: 140px;
+    height: 190px;
+}
+.banner_title{
+    font-size: 5rem;
+    font-weight: 800;
+    padding-bottom: 0rem;
+    color: rgb(202, 202, 26);
+    height: 100px;
+}
+.banner_description{
+    width: 35rem;
+    line-height: 1.3rem;
+    padding-top: 0.rem;
+    font-size: 0.9rem;
+    max-width: 360px;
+    height: 65px;
+}
+.banner_button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.banner_button:hover{
+    color: rgba(3, 3, 3, 0.863);
+    background-color: rgba(248, 246, 246, 0.932);
+    transition: all 0.2s;
+    
+}
+.banner-fadebottom{
+    margin-top: 225px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
+}
+.nav_logo{
+    width: 74px;
+    object-fit: contain;
+
+}
+.nav_avatar{
+    cursor: pointer;
+    width: 30px;
+    object-fit: contain;
+}
+.nav_bell{
+    cursor: pointer;
+    width: 30px;
+    object-fit: contain;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    background-color: rgba(46, 45, 45, 0.87);
+}
+.nav:hover{
+    background-color: rgb(54, 53, 53);
+    transition: all 0.5s;
+}
+.nav_black{
+    background-color: #111;
+}
+
+@font-face{
+    font-family: myfont;
+    src: url(netflix-images/VarelaRound-Regular.ttf);
+}
+.nav_text1{
+    cursor: pointer;
+    color: #fff;
+    font-family: myfont ;
+    font-size: 15px ;
+    font-weight: bold;
+    max-width: 20px;
+    margin: 8px;
+    
+}
+.nav_text{
+    cursor: pointer;
+    color: #fff;
+    font-family:myfont ;
+    font-size: 12px;
+    font-weight: normal;
+    max-width: 110px;
+    margin: 10px;
+}
+.box{
+    margin:0px;
+    position: relative;
+    width: 250px; 
+    border:3px solid rgba(48, 47, 47, 0.219);
+    padding: 0px 0px;
+    border-radius: 50px;
+}
+.box:hover{
+    border:3px solid rgba(83, 82, 82, 0.493);
+    padding: 0px 0px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.elements{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.searchbar{
+    border:none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 12px;
+    font-family: myfont;
+    color:#5a5959;
+    background-color:transparent ;
+    font-weight: 900;
+}
+.searchbar:focus{
+    outline: none;
+}
+.material-icons{
+    font-size: 26 ;
+    color: #5a5959;
+}
